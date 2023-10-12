@@ -29,7 +29,7 @@
 
 ### Robotic Process Automation: RPA**
 - should be used for legacy systems that dont have APIs
-  - can acess data using a user interface, just like a person would(can mimick user interact
+  - can acess data using a user interface, just like a person would(can mimick user interaction)
 - assigns repetitive, time-intensive business processes to robots, freeing up people to focus on critical, complex work
 - can automate task involving web, desktop and remotely deployed applications
 - task recorder intuitively and efficiently create a robotic task as you interact with a web browser

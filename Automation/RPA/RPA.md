@@ -38,12 +38,7 @@
   - can check the progress of robotic tasks in Robot Details
 - users need to be at least a Viewer of the robotic task design object to see it in this view
 
-### Robot Pools
-- a collection of robots, each installed on individual host machines, that run robotic tasks
-- Create different robot pools to categorize robots for purpose, security and system access
-- when a robotic task is triggered, it can use any robot in a robot pool to complete the work
-- If a host machine is down, or a robot is unavailable, a different, available robot in the robot pool would complete the work
-- If a robot pool is not added, the robotic task can still be configured but will not be able to debug or execute
+
 
 
 
