@@ -49,3 +49,6 @@
 
 - from the main process Click the `+` symbol on the subprocess activity node to open a read only version of the sub process, `View Sub-Process Model` window displays
 - from the read only version of the sub process click the `Open and edit in New Canvas` button to open in separate tab of the process modeler
+
+
+### Passing a process variable as a reference

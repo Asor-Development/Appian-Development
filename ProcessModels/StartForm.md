@@ -1,5 +1,5 @@
 # Start Form
-**A process that starts whena form is filled out needs a process start form 
+**A process that starts when a form is filled out needs a process start form 
 ## Process Start Form
 - form used to start a process
 - you can select a interface or create an expression for the start form

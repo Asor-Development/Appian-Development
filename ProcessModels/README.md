@@ -34,3 +34,9 @@ Use rules and constants instead of hard-coded values in the process nodes
 
 
 
+# Process Model Nodes
+- **Standard Nodes:** 
+    - **activities:** used to capture and process business data(script task, subprocess)
+    - **events:** enable designers to start, stop and or continue the progress of a workflow
+    - **gateways:** used to control the workflow in a process based on business logic
+
