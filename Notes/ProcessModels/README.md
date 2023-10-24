@@ -1,42 +1,59 @@
-here are various best practices for process modeling with respect to process model and process nodes. It also depends on the activity we are using like messaging. Following are a few basic best practices.
+# Process Modeling
+**Process models are a way to graphically describe business processes. In Appian process models are not just the starting point for building your process, it is the process. Appian translates your business workflows to executable processes automatically**
+- the process modeler is used to diagram business process using standard business process model and notation symbols
+- has drag and drop activities that developers can use to create a workflow for automated task to execute specialized business services based on the user input 
+- process model are not static
+- **Processes:** enable performing activities that capture and modify data
+ - query data, assign tasks, perform calculations on data, send email, generate document
+- **Naming:** `AX Add Vehicle Form` Application prefix and spaces between words
+- **Security:** process model do not inherit security from their folders
+- **Actions:** each action and related action should be linked to a process model
+    - drives actions perform in the application
+    - actions are used when there is no specific record involed(add vehicle etc...)
+    - related actions are preform on specific records
+    - a process model should be linked to each action and related action
+    - document each action/related action, the record, and the process model
+____________________________________________________________________________________________________
+## The Process Modeler Views
+- **Analysis View:** can be used during planning to draw a simple process model
+    - used to create a high level view of the process, it is recommened that you keep this diagram as a separate object
+    - can reference this process model when you are creating the process model in designer view
+    - can include annotations
+- **Designer View:** where  you crate a working process model with functionality
+____________________________________________________________________________________________________
+## Process Model compoenets/nodes
+- test and debug each node after it is added to the process model
+- SHIFT will automatically toggle your pointer to the connector tool(can also use the Connect 
+ icon to connect the nodes)
 
-Process Models
-Process model has labeled swim-lanes with default assignment
-Process model display name is set and is dynamic (e.g. “Started by pp!initiator”)
-All process flows have been tested and no errors occurred
-All models have custom Alert settings configured using groups
-Processes that contain user input tasks or a significant portion of log: Archive after 3 days. Everything else: Delete after 0 days.
-Process models are split into sub-processes to compartmentalize sets of functionality and large cumbersome process models are avoided
-Models contain no more than 30 nodes
-Models contain no more than 50 process variables
-XOR gateways are used in front of MNI nodes to check for empty/null values
-Process flow will always reach at least one terminating end event
-Process-to-process messages are targeted to a specific process instance using PID
-All complex logic is documented using annotations (anything that isn't obvious)
-All external integrations are contained in their own subprocesses to minimize the impacts of the external systems changing their interfaces. E.g. anything other than query rules and data stores should be encapsulated.
-If the external integration points are using CDTs to exchange data (such as integration with web services), use these CDTs locally within the integration process models or rules and create business CDTs to be used by the rest of the application. This prevents changes in external systems data structures from having widespread impacts in the application.
-Best practices for creating memory efficient models have been followed
-Design short-lived processes to perform actions and maintain the data. Consider using process model based related actions instead of quick task related actions when possible.
-Ensure there is no way to unintentionally loop through a smart service node (db write, create document, etc)
+________________________________________________________________________________________________________
+## Major elements used to build a process model
+- **paleltte:** where you select and search for nodes and smart services
+- **Standard Nodes:** used to capture and process business data, and control processes
+    - [More About Standard Nodes...]()     
+- **Smart Services:** provide speicalized business services,these services complete specific tasks such as sending emails, or creating folders or calling integrations there are two types
+    - [More About Smart Services...]()
+- **canvans:** where you create and configure the process model
+- **tool bar:** where you access process model tools and properties(process instances)
+- **menu:** where you access additional tools and properties
 
-Process Nodes
-Nodes are named with verb-noun format
-Task display name is set and dynamic
-Every SAIL form node has all inputs specified as process variables or activity class parameters
-All XOR/OR gateways have a single incoming flow
-All outgoing flows from a gateway are labeled
-XOR gateways are used instead of OR
-Node inputs do not make the same query call more than once
-CDTs are not passed by reference between parent and sub-process
-Looping functions are used instead of Multiple Node Instances where possible
-On the Other Tab for Forms, check the "Delete previous instances" and do not check “Keep a record of the form”
-Use rules and constants instead of hard-coded values in the process nodes
+____________________________________________________________________________________________________
+
+## Documentation
+**To preserve a record of your work select tools and generate documentation from the menu**
+- creates a summary of the process model with information about the properties, diagram, nodes, and content 
+________________________________________________________________________________________________________
+
+## BEST PARATICES
+- **Number of nodes:** there should have fewer than 30 nodes
+- **Look for reusablity:** are any steps repeated, think about creating a subprocess that can be called each time a process needs to complete these steps, this tends to be more efficient and reduces the memory footprint for the model
 
 
-
-# Process Model Nodes
-- **Standard Nodes:** 
-    - **activities:** used to capture and process business data(script task, subprocess)
-    - **events:** enable designers to start, stop and or continue the progress of a workflow
-    - **gateways:** used to control the workflow in a process based on business logic
-
+- [Process Instances](./Model/ProcessInstances.md)
+- [Smart Processes](./Model/SmartProcesses.md)
+- [Data Flow](./DataFlow/README.md)
+- []()
+- []()
+- []()
+- []()
+- []()
