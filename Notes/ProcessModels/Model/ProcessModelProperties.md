@@ -1,3 +1,39 @@
+# [Process Model Properties](https://docs.appian.com/suite/help/23.3/process-model-object.html#process-model-properties)
+
+
+
+### Tabs
+**The tabs you see depend on the view you are in for the process model (Process Designer, Process Analyst, Edit Mode, Monitor Process).**
+- When multiple languages are enabled in the application, subtabs representing each enabled languages will appear
+
+### General Properties
+ 
+### Variables Properties
+**Lists the current process variables that have been defined for this process model**
+- Variables that are required at the start of the process are called process parameters
+
+### Process Start Form Properties
+**Used to gather data that must be provided to start a process**
+- process kicks off when a user submits the start form
+- the Start node will be configured to use the form
+
+### Deadlines Properties
+**Specify the target date and time for completion of the process**
+
+### Alerts Properties
+**Specifies the recipients of an alert if there is an error in the process**
+- can be left to a default setting or any combination of four custom alert settings
+
+### Data mangement Properties
+**Allow designers to specify a policy for archiving or deleting completed and canceled processes**
+- all Appian processes, including completed and canceled processes, are retained in memory until archived or deleted
+- bdefault, the processes are automatically archived after 7 days
+- setting one of these configurations to 0 as an interval will immediately archive or delete the instance after completion
+- changes made on this form are applied to all instances of the process model, including ones already completed
+- subprocesses do not inherit this setting
+
+
+___________________________________________________________
 # Process properties
 **Used to govern the top level fetures of the model**
 

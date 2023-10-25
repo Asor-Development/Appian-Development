@@ -10,12 +10,4 @@
 - you can handle null variable values by giving them a value such as a place  holder
     - use the `isnull()` function to test if a value is null or not, returns true if value is null
     - `isnullorempty()` checks for null values, or empty list
-## Local 
-- locally stored/cached data
-- can only be accessed within the function that defines them
-- used to reference the same dat mutiple times within an expression
-- defined within the `a!localvariable()` function
-    - the first parameters are reserved for the name and value of the variables
-    - the last parameter is reserved for the evaluation of the variables
-- can be used in the definition of other local variables defined after it
-- when querying data you might want to query the database once the store it in a local variable and reference that variable when needed, if not then you would be querying the data every time you need it(performace)
+

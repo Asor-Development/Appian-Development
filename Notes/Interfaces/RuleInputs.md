@@ -1,4 +1,5 @@
-## Rule Inputs
+# Rule Inputs
+- Rule inputs are non-local variables that are provided to the expression because of where it is being evaluated
 - placeholders that say pass something at runtime
 - use rule inputs to define variables
 - Must specify
