@@ -1,17 +1,20 @@
-here are various best practices for process modeling with respect to process model and process nodes. It also depends on the activity we are using like messaging. Following are a few basic best practices.
+# Process Models Basic Best Practices
 
-Process Models
-Process model has labeled swim-lanes with default assignment
-Process model display name is set and is dynamic (e.g. “Started by pp!initiator”)
-All process flows have been tested and no errors occurred
-All models have custom Alert settings configured using groups
-Processes that contain user input tasks or a significant portion of log: Archive after 3 days. Everything else: Delete after 0 days.
-Process models are split into sub-processes to compartmentalize sets of functionality and large cumbersome process models are avoided
-Models contain no more than 30 nodes
-Models contain no more than 50 process variables
-XOR gateways are used in front of MNI nodes to check for empty/null values
-Process flow will always reach at least one terminating end event
-Process-to-process messages are targeted to a specific process instance using PID
+- has labeled swim-lanes with default assignment
+- display name is set and is dynamic 
+- all process flows have been tested and no errors occurred
+- all models have custom Alert settings configured using groups
+Processes that contain user input tasks or a significant portion of log: 
+- Archive after 3 days. Everything else: Delete after 0 days.
+- split process models into sub-processes to compartmentalize sets of functionality
+- avoid large cumbersome process models 
+- models contain no more than 30 nodes
+- models contain no more than 50 process variables
+- XOR gateways are used in front of MNI nodes to check for empty/null values
+- process flow always reach at least one terminating end event
+- rocess-to-process messages are targeted to a specific process instance using PID
+
+
 All complex logic is documented using annotations (anything that isn't obvious)
 All external integrations are contained in their own subprocesses to minimize the impacts of the external systems changing their interfaces. E.g. anything other than query rules and data stores should be encapsulated.
 If the external integration points are using CDTs to exchange data (such as integration with web services), use these CDTs locally within the integration process models or rules and create business CDTs to be used by the rest of the application. This prevents changes in external systems data structures from having widespread impacts in the application.
