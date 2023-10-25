@@ -1,3 +1,6 @@
+# Local Variales
+- uni
+
 Different between loads with evaluated?
 
 load(): Lets you define local variables within an expression for an interface and evaluate the expression with the new variables, then re-evaluate the function with the local variables' values from the previous evaluation.

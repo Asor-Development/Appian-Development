@@ -1,5 +1,5 @@
 # Activity Class Parameters(ACPs)
-**Variables that are unique to a specific node**
+**Variables that are unique to a specific node,you can think of them like local variables for process nodes**
 - act as containers to capture data that is specific to one node
 - are both node inputs and node outputs
 - only exist in the node

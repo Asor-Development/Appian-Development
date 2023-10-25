@@ -13,7 +13,8 @@
     - related actions are preform on specific records
     - a process model should be linked to each action and related action
     - document each action/related action, the record, and the process model
-____________________________________________________________________________________________________
+**To work on Process Models make sure you're a member of the Process Model Creators system group**
+___________________________________________________________________________________________
 ## The Process Modeler Views
 - **Analysis View:** can be used during planning to draw a simple process model
     - used to create a high level view of the process, it is recommened that you keep this diagram as a separate object

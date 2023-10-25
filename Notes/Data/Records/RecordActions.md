@@ -35,3 +35,10 @@
 - A feed-style list expression
 **When you want to pass a reference to the record itself, use rv!record. This is typically used for configuring the summary view.**
 - To call a specific field, use rv!record followed by square brackets and the name of the field.
+
+## Ceate Record Action Manually
+1. [Create a process model](https://docs.appian.com/suite/help/23.3/Process_Modeling_Tutorial.html#create-the-process-model)
+2. Create a record list action
+    - Open the record type and select **Record List Actions**
+    - Click **CONFIGURE NEW ACTION MANUALLY**
+    - Add a name, icon and the process model you created
