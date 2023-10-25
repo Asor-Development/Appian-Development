@@ -1,13 +1,13 @@
 # Starting A Process From Within a Process
 - you can start a process from a process in 3 ways
 
-1. **[Subprocess Smart Service:]()**
+1. **[Subprocess Smart Service:](../Nodes/SmartServices/StartingProcesses/SubProcess.md)**
 - used to launch subprocesses from within your current process
 - links the two published process models through a parent-child relationship and allows you to transfer data between them
 - parent and child processes each contain references to the other
 - can be run either asynchronously or synchronously.
 
-2. **[Start Process Smart Service:]()**
+2. **[Start Process Smart Service:](../Nodes/SmartServices/StartingProcesses/StartProcess.md)**
 - allows you to initiate another process from your current process
 - the new process is started asynchronously 
 - the process flow of the current process continues after the new process starts
