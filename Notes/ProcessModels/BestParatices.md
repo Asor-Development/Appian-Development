@@ -11,8 +11,9 @@ Processes that contain user input tasks or a significant portion of log:
 - models contain no more than 30 nodes
 - models contain no more than 50 process variables
 - XOR gateways are used in front of MNI nodes to check for empty/null values
+- formally terminate a process when it reaches an end event node
 - process flow always reach at least one terminating end event
-- rocess-to-process messages are targeted to a specific process instance using PID
+- process-to-process messages are targeted to a specific process instance using PID
 
 
 All complex logic is documented using annotations (anything that isn't obvious)
