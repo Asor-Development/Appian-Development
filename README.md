@@ -77,3 +77,14 @@ _______________________
     - **Tempo:** Tempo is an interface for feeds, tasks, and actions that combines social collaboration, filtered views, and forms. As a user interface, Tempo is more limited than sites, but may be the right solution in certain circumstances
 
 _________________
+
+
+---
+
+
+Preview Self-Service Analytics
+We invite you to preview the new self-service analytics capabilities, a way for business users to explore their enterprise data to answer real-time questions. This is the start of many more capabilities that we look forward to sharing with you soon.
+
+In their production environment, users can go to Data Fabric Analytics to browse datasets, select one for exploration, and use the report builder to slice and dice the data. When Appian AI Copilot is enabled, users can dig deeper into their reports to analyze the results faster.
+
+Synced record types are visible to users as datasets. As a developer, you'll review record type configuration and security, and control access by adding users to the Data Fabric Report Creators system group.

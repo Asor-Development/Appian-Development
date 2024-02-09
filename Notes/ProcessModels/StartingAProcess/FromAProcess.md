@@ -5,7 +5,7 @@
 - used to launch subprocesses from within your current process
 - links the two published process models through a parent-child relationship and allows you to transfer data between them
 - parent and child processes each contain references to the other
-- can be run either asynchronously or synchronously.
+- can be run either [asynchronously](../Nodes/SmartServices/StartingProcesses/SubProcess.md#subprocess-smart-service-asynchronously) or [synchronously](../Nodes/SmartServices/StartingProcesses/SubProcess.md#subprocess-smart-service-synchronous) .
 
 2. **[Start Process Smart Service:](../Nodes/SmartServices/StartingProcesses/StartProcess.md)**
 - allows you to initiate another process from your current process

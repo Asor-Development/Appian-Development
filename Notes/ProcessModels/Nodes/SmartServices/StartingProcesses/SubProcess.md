@@ -7,10 +7,16 @@
 ## Subprocess Smart Service: Asynchronously and Synchronous     
 - have parent-child Relationship
 - process variables can be passed by reference
+    - the same object is passed between the parent and the child process
+    - like storing a pointer to a value, rather than a static value, if the value is changed in one place it changes in both
+    - you can update the object in both process models
+    - could be a problem since 2 processes can update at the same time
 - can access process reports of parent
 - runs on same engine as parent/child
 - process model to start is defined	statically
 - medium performance under high load
+
+
 
 ## Subprocess Smart Service: Asynchronously
 - no process outputs
@@ -28,5 +34,13 @@
 - use when you want to 
     - use the results of the subprocess
     - chain to a User Input Task
-    - 
-- is easy to map process variables of the subprocess to ones in the current process
+
+### Variables
+- parent process variables must be parameterized to be accessed from subprocess
+    - use Setup --> Input Variables to add process variables from parent using the drop down
+    - subprocess process variable should appear and should be mapped to parent process variable
+- can map process variables of the subprocess to ones in the current process
+
+---
+
+- pass by value the object is “copied/cloned” so the same values will be there

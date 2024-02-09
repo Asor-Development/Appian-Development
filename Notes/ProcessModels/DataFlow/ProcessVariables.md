@@ -19,13 +19,13 @@
     - be written to an external database or a DSE
     - used to created records and reports
 ______________________________________
-
+## New Process Variable
 - **Name**
 - **Type**
 - **Value** default value of a process variable when starting a process
     - if the default value of a variable is used as a Parameter and is defined using an expression, that expression is automatically used as the default value for any associated fields in a process start form
     - expressions used as default values on start forms are used to calculate the parameter's value
-- **Parameter:** Allows process variables to pass a value when starting a process
+- **Parameter:** Allows process variables to pass a value when starting a process(parameterized)
     - use when another object or service is starting the process and needs to pass in data
     - such as start forms, related actions, subprocesses, and receive message events can contain data, and should be associated with the parameters in the process model it's calling
     - if a a primitive system data type(text, integer, boolean etc...) is used, a field will automatically be added to the process start form and that field is automatically mapped to the process variable

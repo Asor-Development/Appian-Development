@@ -1,5 +1,5 @@
 # Automation
-**Optimize workflow to reduce errors, increase revenue, add value, and drive up customer satisfaction**
+**Optimizing workflows to reduce errors, increase revenue, add value, and drive up customer satisfaction**
 **Workflow capabilites are extended to combine people, technologies and data, to maximize resources and improve business results**
 
 - automation describes the shift of tasks from humans to technology appliations that excel at performing repetitive, time consuming work
