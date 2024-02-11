@@ -1,1 +1,0 @@
-- [System Groups](https://docs.appian.com/suite/help/23.3/System_Groups.html)
