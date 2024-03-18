@@ -1,1 +1,0 @@
-**Appian recommends creating queries in an expression rule so it's easier to maintain and reference your query**
