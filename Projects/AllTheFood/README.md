@@ -3,19 +3,8 @@
 
 ## Record Types
 
-### ATF_Category  
-|    Name          |   DataType    |
-| ---------------- | ------------- |
-|  **id**          | `Integer: PK` |
-| **categoryName** | `String`      |
-
-
-### ATF_Size
-
-|    Name          |   DataType    |
-| ---------------- | ------------- |
-| **id**           | `Integer: PK` |
-| **size**         | `String`      |
+- [x] Category
+- [x] Size
 
 
 ### ATF_Item
